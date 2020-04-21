@@ -4,18 +4,22 @@
 
 /* start: 2 columns: sidebar and main */
 
-	.container {
-		display: grid;
-		width: 80%;
-		margin: 0 auto;
-		height: 100%;
-		grid-template-areas: ".left-side .right-side";
-		grid-template-columns: 1fr 10fr;
-	}
+.container {
+	display: grid;
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+	grid-template-areas: ".left-side .right-side";
+	grid-template-columns: 2fr 10fr;
+}
 
-	.sidebar {
-		margin-top: 200px;
-	}
+.sidebar {
+	margin-top: 200px;
+}
+
+.sidebar .sub-menu{
+	margin-left: 20px;
+}
 
 
 /* end: 2 columns: sidebar and main */
