@@ -2,6 +2,25 @@
 
 /* CUSTOM CSS */
 
+/* start: 2 columns: sidebar and main */
+
+	.container {
+		display: grid;
+		width: 80%;
+		margin: 0 auto;
+		height: 100%;
+		grid-template-areas: ".left-side .right-side";
+		grid-template-columns: 1fr 10fr;
+	}
+
+	.sidebar {
+		margin-top: 200px;
+	}
+
+
+/* end: 2 columns: sidebar and main */
+
+
 /* see #6 */
 .highlighttable td,th{padding:0;border:0;}td.code{width:95%;}
 /* needed for chroma-based highlight */
@@ -14,3 +33,5 @@ li code {
 	color: #24292e;
 	padding: 0 5px;
 }
+
+

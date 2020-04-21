@@ -6,17 +6,25 @@
 
 		<div class="content">
 			<div class="home">
-
 				{{ if .Site.Params.headerText | or .Site.Params.headerImage }}
-				<div class="call-out" style="background-image: url('{{ printf "img/%s" .Site.Params.headerImage | absURL }}')">
+					<div class="call-out" style="background-image: url('{{ printf "img/%s" .Site.Params.headerImage | absURL }}')">
 					{{ .Site.Params.headerText | markdownify }}
 				</div>
 				{{ end }}
 
-				{{ partial "post-list.html" . }}
-				{{ partial "pagination.html" . }}
+				<div class="container">
+					<div class="left-side">
+						<div class="sidebar">
+							{{ partial "sidebar.html" . }}
+						</div>
+					</div>
+					<div class="right-side">
+						{{ partial "post-list.html" . }}
+						{{ partial "pagination.html" . }}
+				     </div>
+				</div>
 
-				{{ partial "footer.html" . }}
+				{{ partial "footer.html" . }}111
 
 			</div>
 		</div>
